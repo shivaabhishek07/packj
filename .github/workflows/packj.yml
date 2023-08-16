@@ -30,3 +30,4 @@ jobs:
         uses: shivaabhishek07/packj-github-action@16d8c873ed22710800cd0299291b10a42d02e651
         with:
           DEPENDENCY_FILES: pypi:requirements.txt
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
