@@ -10,7 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Packj Security Audit Workflow
-        uses: actions/workflow-dispatch@v2
+        uses: actions/github-script@v5
         with:
+          script: |
+            const { data } = await github.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'packj-security-audit.yml'
+            });
+            console.log(data);
           token: ${{ secrets.GITHUB_TOKEN }}
-          workflow: 'Packj security audit'
