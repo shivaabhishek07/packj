@@ -1,0 +1,16 @@
+name: Contributor Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  trigger-security-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Packj Security Audit Workflow
+        uses: actions/workflow-dispatch@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          workflow: 'Packj security audit'
