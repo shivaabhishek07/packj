@@ -28,7 +28,7 @@ jobs:
 
       # Audit 
       - name: Audit dependencies
-        uses: shivaabhishek07/packj-github-action@6cb46380428960652c9d50132bbc8be2b7508f70
+        uses: shivaabhishek07/packj-github-action@c37ebe7c292907c54fa9e7ed8bf2d8e27c765f8e
         with:
           DEPENDENCY_FILES: pypi:requirements.txt
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
