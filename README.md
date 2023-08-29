@@ -11,7 +11,7 @@
 
 # Contents #
 
-* [Get started](#get-started) - available as Docker image, GitHub Action, and packages
+* [Get started](#get-started) - available as Docker image, GitHub Action, and packages 
 * [Functionality](#functionality) - deep static/dynamic code analysis and sandboxing
 * [Supported ecosystems](#supported-ecosystems) - NPM, PyPI, Rubygems, PHP, Rust
 * [Our story](#our-story) - started as a PhD research project and is backed by govt grants
